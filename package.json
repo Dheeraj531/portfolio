@@ -2,7 +2,6 @@
   "name": "dheeraj-portfolio",
   "version": "1.0.0",
   "description": "Portfolio website with React frontend and Node.js backend",
-  "main": "server/index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
