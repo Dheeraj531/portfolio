@@ -32,7 +32,7 @@ const Contact = ({ personal }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: '0de61839-83a6-4db4-a5d2-5f52dd81f7b5', // Web3Forms access key
+          access_key: '190b28ec-865d-46ed-8c9f-a9da7f1940b1', // Web3Forms access key
           to_email: 'ballappallidheeraj17@gmail.com',
           from_name: formData.name,
           email: formData.email,
