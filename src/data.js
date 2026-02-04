@@ -5,6 +5,7 @@ const portfolioData = {
         email: "ballappallidheeraj17@gmail.com",
         phone: "9704964521",
         linkedin: "https://www.linkedin.com/in/dheeraj-ballappalli-4b9106294/",
+        github: "https://github.com/Dheeraj531",
         summary: "I am pursuing my engineering graduation with expertise in cloud computing, AI, Data Science, and Full Stack Development. Skilled in AWS, Java, Python, and troubleshooting technical issues. Adept at supporting critical applications, delivering excellent customer service, and collaborating in fast-paced environments."
     },
     skills: {

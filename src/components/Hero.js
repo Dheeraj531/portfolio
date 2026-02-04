@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaEnvelope, FaLinkedin, FaPhone, FaChevronDown } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaPhone, FaGithub, FaChevronDown } from 'react-icons/fa';
 import '../styles/Hero.css';
 
 const Hero = ({ personal }) => {
@@ -65,6 +65,9 @@ const Hero = ({ personal }) => {
             </a>
             <a href={personal?.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <FaLinkedin />
+            </a>
+            <a href={personal?.github} target="_blank" rel="noopener noreferrer" title="GitHub">
+              <FaGithub />
             </a>
             <a href={`tel:${personal?.phone}`} title="Phone">
               <FaPhone />

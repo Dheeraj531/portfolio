@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaLinkedin, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaPhone, FaGithub } from 'react-icons/fa';
 import '../styles/Footer.css';
 
 const Footer = ({ personal }) => {
@@ -16,6 +16,9 @@ const Footer = ({ personal }) => {
             </a>
             <a href={personal?.linkedin} target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
+            </a>
+            <a href={personal?.github} target="_blank" rel="noopener noreferrer">
+              <FaGithub />
             </a>
             <a href={`tel:${personal?.phone}`}>
               <FaPhone />

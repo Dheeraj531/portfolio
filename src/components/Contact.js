@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
 import '../styles/Contact.css';
 
 const Contact = ({ personal }) => {
@@ -88,6 +88,15 @@ const Contact = ({ personal }) => {
                   <h4>LinkedIn</h4>
                   <a href={personal?.linkedin} target="_blank" rel="noopener noreferrer">
                     Dheeraj Ballappalli
+                  </a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <FaGithub />
+                <div>
+                  <h4>GitHub</h4>
+                  <a href={personal?.github} target="_blank" rel="noopener noreferrer">
+                    Dheeraj531
                   </a>
                 </div>
               </div>
