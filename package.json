@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,7 +37,14 @@
       "last 1 safari version"
     ]
   },
-  "keywords": ["portfolio", "react", "nodejs"],
+  "keywords": [
+    "portfolio",
+    "react",
+    "nodejs"
+  ],
   "author": "B Dheeraj",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
 }
