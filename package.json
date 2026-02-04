@@ -9,7 +9,7 @@
     "client": "cd client && npm start",
     "install-all": "npm install && cd client && npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm install && npm run build"
   },
   "keywords": ["portfolio", "react", "nodejs"],
   "author": "B Dheeraj",
