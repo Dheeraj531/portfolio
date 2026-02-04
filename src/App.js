@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,25 +7,19 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import portfolioData from './data';
 import './styles/App.css';
 
 function App() {
-  const [portfolioData, setPortfolioData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('/api/portfolio');
-        setPortfolioData(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error fetching portfolio data:', error);
-        setLoading(false);
-      }
-    };
+    // Simulate loading for smooth UX
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
 
-    fetchData();
+    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
